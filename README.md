@@ -6,8 +6,7 @@ The repository was built as additional material of the paper entitled
 "Inner Speech and Damasio’s Theory for Modelling
 Robot’s Emotions" by Sophia Corvaia, Arianna Pipitone and Antonio Chella .
 
-
-The framework provides the robot with the ability to appraise the context by the inner speech (the self-dialogue implemented by the inner speech cognitive architecture [1]) and to elicit an emotion related to the appraised context. The emotion emerges by projecting the appraisal variables (that are mathematically formalized as described in the paper) into the Russell's space.  
+The framework provides the robot with the ability to interpret the context through inner speech (the self-dialogue implemented by the inner speech cognitive architecture [1]) and to elicit an emotion based on this interpretation. The emotion emerges by projecting the interpreted variables (mathematically formalized as described in the paper) into Russell's space, in accordance with Antonio Damasio's theory of emotions.
 
 The repository contains the Python scripts implementing the proposed model of the tight link between inner speech and emotions, and the needed resources for running it (the knowledge model and the xml description of the parameters for the appraisal variables).
  
