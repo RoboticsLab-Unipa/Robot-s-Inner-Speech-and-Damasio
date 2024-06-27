@@ -1,0 +1,7 @@
+Body Part,x_min,x_max,y_min,y_max
+Head,0,75,60,107
+Legs,305,522,45,115
+Hands,258,303,0,33
+Arms,76,257,0,33
+Chest,76,193,34,137
+Womb,194,304,34,137
