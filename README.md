@@ -36,14 +36,6 @@ Operative systems:
 
 - Install additional libraries
 
-The project require some additional libraries to work. 
-- <b>Execnet</b>: The project use a Python Bridge between the two based python interpreter (python 2.7 and every version of python 3),
-so you may install the <i>execnet</i> library: you can do it throught the command:
-
-
-    pip install execnet
-
-You can find more information on the following site: <https://pypi.org/project/execnet/>
 - <b>NAOqi</b>: The project require the Naoqi library to manage robot of Aldebaran. 
 
 
@@ -54,34 +46,27 @@ You can follow the instruction available at <http://doc.aldebaran.com/2-5/dev/py
 ### 1.1 Setting up the Knowledge
 If you want to change the ontology in the project, you may change the file at:
 
-    /resources/kb/onto_tavola_eng.owl
-
+    /resources/knowledge/onto_music.owl
 Pay attention: the project requires an OWL ontology file to be execute.
-With the ontology, you have to change the pixels point of the dishes in the simulation table. You can find the file at:
 
-
-    /resources/points.txt
-
-### 1.2 Setting up the Appraisal Module
-The project can evaluate all 28 emotion from the Russell's Circumplex Model, but this version of the model considers only the 5 primary emotion by 
-Ekman's theory. If you want to evaluate other emotions, you have to view the CSV file of Russell's emotions available at:
+### 1.2 Setting up the Emotion Body reactions
+The project evaluate reactions of the 5 primary emotions Ekman's theory. 
+You need to set up the csv emotions by executing the emo_body.py file. 
+After that, you will find the evaluated emotions at:
 
  
-    /resources/Russell_Ekman_emotion.csv
-    /resources/Russell_emotion_label.csv
+    /resources/data/emBody_value.csv
+    /resources/data/emBody_color.csv
 You can select the emotion you interest and run the project.
 
 2 Run the middleware
 ----------------------------------
 Launch the script project by the following command:
 
-    python3 simulation.py
+    python main.py
     
 and see your Pepper/NAO robot interacts to you while reasoning about its emotion by inner speech. 
 
-If you want to check a simple version of the project, considering only the modal modal cycle, launch the script project like this:
-
-    python modal_modal.py
 Please, pay attention to the argument passed to the function.
 
 Enjoy!
